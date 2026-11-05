@@ -222,3 +222,68 @@ function btnEqual_event(){
 
 let btnEqual = document.getElementById("btnEqual");
 btnEqual.addEventListener("click", btnEqual_event)
+
+
+// Keyboard access
+
+document.addEventListener("keydown", function(event) {
+
+    let key = event.key;
+
+    if (key == "0") {
+        btn0.click();
+    }
+    else if (key == "1") {
+        btn1.click();
+    }
+    else if (key == "2") {
+        btn2.click();
+    }
+    else if (key == "3") {
+        btn3.click();
+    }
+    else if (key == "4") {
+        btn4.click();
+    }
+    else if (key == "5") {
+        btn5.click();
+    }
+    else if (key == "6") {
+        btn6.click();
+    }
+    else if (key == "7") {
+        btn7.click();
+    }
+    else if (key == "8") {
+        btn8.click();
+    }
+    else if (key == "9") {
+        btn9.click();
+    }
+    else if (key == "+") {
+        btnPlus.click();
+    }
+    else if (key == "-") {
+        btnMinus.click();
+    }
+    else if (key == "*") {
+        btnMultiplication.click();
+    }
+    else if (key == "/") {
+        btnDivision.click();
+    }
+    else if (key == ".") {
+        btnPoint.click();
+    }
+    else if (key == "Enter" || key == "=") {
+        btnEqual.click();
+    }
+    else if (key == "Backspace") {
+        event.preventDefault();
+        btnBack.click();
+    }
+    else if (key == "Escape") {
+        btnC.click();
+    }
+
+});
